@@ -1,0 +1,10 @@
+#navli a
+{
+    background-color: gray !important;
+    color: whitesmoke;
+}
+
+#navli :hover
+{
+    background-color: purple !important;
+}
