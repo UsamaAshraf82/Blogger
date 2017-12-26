@@ -13,10 +13,10 @@ class CreateVivoTable extends Migration
      */
     public function up()
     {
-        Schema::table('vivo', function (Blueprint $table) {
-            //
+        Schema::create('vivo', function (Blueprint $table) {
+
             $table->integer('id')->unique();
-            $table->string('name')->unique();
+            $table->string('name');
             $table->string('price');
             $table->string('OS');
             $table->string('Dimensions');
@@ -31,7 +31,7 @@ class CreateVivoTable extends Migration
             $table->string('GPU');
             $table->string('Size');
             $table->string('Protection');
-            $table->string('	Built-in	');
+            $table->string('Built-in');
             $table->string('Card');
             $table->string('Main camera');
             $table->string('Features');
@@ -53,6 +53,7 @@ class CreateVivoTable extends Migration
             $table->string('Capacity');
             $table->string('More');
             $table->string('img');
+            $table->timestamps();
         });
     }
 
