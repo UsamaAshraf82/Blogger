@@ -15,8 +15,9 @@ class CreateComingSoonTable extends Migration
     {
         Schema::create('comingSoon', function (Blueprint $table) {
             //
-            $table->integer('id')->unique();
+            $table->increments('id')->unique();
             $table->string('company');
+            $table->text('new');
             $table->string('name');
             $table->string('price');
             $table->string('OS');

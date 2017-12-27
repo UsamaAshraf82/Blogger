@@ -12,5 +12,6 @@ class vivo_table_seeder extends Seeder
     public function run()
     {
         //
+        factory(App\vivo::class, 50)->create();
     }
 }

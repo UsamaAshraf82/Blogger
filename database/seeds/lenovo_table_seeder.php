@@ -12,5 +12,6 @@ class lenovo_table_seeder extends Seeder
     public function run()
     {
         //
+        factory(App\lenovo::class, 50)->create();
     }
 }

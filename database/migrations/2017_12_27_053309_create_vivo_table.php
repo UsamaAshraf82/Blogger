@@ -14,8 +14,9 @@ class CreateVivoTable extends Migration
     public function up()
     {
         Schema::create('vivo', function (Blueprint $table) {
-            $table->integer('id')->unique();
+            $table->increments('id')->unique();
             $table->string('name');
+            $table->text('new');
             $table->string('price');
             $table->string('OS');
             $table->string('Dimensions');

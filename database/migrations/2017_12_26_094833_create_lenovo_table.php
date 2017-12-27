@@ -15,8 +15,9 @@ class CreateLenovoTable extends Migration
     {
         Schema::create('lenovo', function (Blueprint $table) {
             //
-            $table->integer('id')->unique();
+            $table->increments('id')->unique();
             $table->string('name');
+            $table->text('new');
             $table->string('price');
             $table->string('OS');
             $table->string('Dimensions');

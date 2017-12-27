@@ -12,5 +12,6 @@ class coming_soon_table_seeder extends Seeder
     public function run()
     {
         //
+        factory(App\comingSoon::class, 20)->create();
     }
 }

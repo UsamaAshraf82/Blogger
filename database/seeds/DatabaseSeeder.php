@@ -12,5 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
          $this->call(htc_table_seeder::class);
+        $this->call(lenovo_table_seeder::class);
+        $this->call(vivo_table_seeder::class);
+        $this->call(coming_soon_table_seeder::class);
+
     }
 }
