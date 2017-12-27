@@ -9,6 +9,7 @@
 <body>
 
     @include("layout.Header")
+    @include("layout.frontend")
 
 </body>
 </html>

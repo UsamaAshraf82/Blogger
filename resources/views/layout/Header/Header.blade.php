@@ -15,9 +15,7 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2" >
-                <button class="btn  btn-default" >
-                    Login
-                </button>
+
             </div>
         </div>
     </div>
