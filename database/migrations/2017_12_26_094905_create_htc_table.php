@@ -15,8 +15,9 @@ class CreateHtcTable extends Migration
     {
         Schema::create('htc', function (Blueprint $table) {
             //
-            $table->integer('id')->unique();
+            $table->increments('id')->unique();
             $table->string('name');
+            $table->text('new');
             $table->string('price');
             $table->string('OS');
             $table->string('Dimensions');

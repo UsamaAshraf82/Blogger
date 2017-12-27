@@ -14,7 +14,6 @@ class CreateVivoTable extends Migration
     public function up()
     {
         Schema::create('vivo', function (Blueprint $table) {
-
             $table->integer('id')->unique();
             $table->string('name');
             $table->string('price');
@@ -64,8 +63,6 @@ class CreateVivoTable extends Migration
      */
     public function down()
     {
-        Schema::table('vivo', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('vivo');
     }
 }
