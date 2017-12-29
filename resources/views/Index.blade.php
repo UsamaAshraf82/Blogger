@@ -1,5 +1,5 @@
 @extends("master")
 
 @section('title')
-    Home
+    📈Home
 @endsection

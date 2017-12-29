@@ -1,74 +1,42 @@
-<!--Footer-->
-<footer class="page-footer">
+<footer class="bg-dark text-white py-4" style="
+    color: #ccc;
 
-    <!--Footer Links-->
+
+:focus{
+    color: #eee;
+}">
     <div class="container">
-        <div class="row my-4">
-
-            <!--First column-->
-            <div class="col-md-4 col-lg-4">
-                <h5 class="title mb-4 font-bold">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident
-                    voluptate esse quasi, veritatis totam voluptas nostrum. </p>
-            </div>
-            <!--/.First column-->
-
-
-
-            <!--Second column-->
-            <div class="col-md-2 col-lg-2 ml-auto">
-                <h5 class="title mb-4 font-bold">About</h5>
-                <ul>
-                    <p><a href="#!">PROJECTS</a></p>
-                    <p><a href="#!">ABOUT US</a></p>
-                    <p><a href="#!">BLOG</a></p>
-                    <p><a href="#!">AWARDS</a></p>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 pl-0">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
                 </ul>
             </div>
-            <!--/.Second column-->
-
-
-
-            <!--Third column-->
-            <div class="col-md-4 col-lg-3">
-                <h5 class="title mb-4 font-bold">Adress</h5>
-                <!--Info-->
-                <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            <div class="col-md-3 col-sm-6 pl-0">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Legal</a></li>
+                </ul>
             </div>
-            <!--/.Third column-->
-
-
-
-            <!--Fourth column-->
-            <div class="col-md-2 col-lg-2 text-center">
-                <h5 class="title mb-4 font-bold">Follow Us</h5>
-                <!--Social buttons-->
-                <div class="social-section mt-2 ">
-                    <!--Facebook-->
-                    <a class="btn btn-social-icon btn-twitter">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-
-                </div>
+            <div class="col-md-4 ml-auto text-right">
+                <small class="text-uppercase">Connect on social media</small>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-pinterest fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link pr-0"><i class="fa fa-skype fa-lg"></i></a></li>
+                </ul>
             </div>
-            <!--/.Fourth column-->
-
+            <div class="col-12 text-right small">
+                Copyright &copy; Your website 2017
+            </div>
         </div>
     </div>
-    <!--/.Footer Links-->
-
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2017 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
-
 </footer>
-<!--/.Footer-->
+

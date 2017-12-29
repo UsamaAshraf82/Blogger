@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-9">
+
             @include("layout.frontend.jumbotron")
-        </div>
+            @include("layout.frontend.sidebar")
     </div>
 </div>
 
