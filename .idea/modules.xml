@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Blogger.iml" filepath="$PROJECT_DIR$/.idea/Blogger.iml" />
-      <module fileurl="file://D:/xamp/htdocs/FA17WebClass/Laravel Projects/.idea/Laravel Projects.iml" filepath="D:/xamp/htdocs/FA17WebClass/Laravel Projects/.idea/Laravel Projects.iml" />
     </modules>
   </component>
 </project>
