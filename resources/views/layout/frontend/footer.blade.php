@@ -1,5 +1,13 @@
+<div class="row">
+    <div class="col-lg-4 col-lg-offset-4" style="font-size: 15px">
+        {!!$users->links()  !!}
+    </div>
+</div>
+
+
+
 <footer class="bg-dark text-white py-4" style="
-    color: #ccc;
+    color: #4bb1b1;
 
 
 :focus{

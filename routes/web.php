@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Index');
-});
+Route::get('/','Pagination@index');

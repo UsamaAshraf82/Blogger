@@ -3,6 +3,15 @@
     background-color: gray !important;
     color: white;
 }
+marquee {
+    background-color: rgb(217, 219, 223);
+    width: 1000px;
+    height: 23px;
+}
+
+marquee {
+    display: inline-block;
+}
 .navbar-brand {
     padding: 0px;
 }
