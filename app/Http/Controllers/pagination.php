@@ -9,7 +9,7 @@ class pagination extends Controller
 {
     public function index()
     {
-        $users = DB::table('htc')->paginate(15);
+        $users = DB::table('htc')->paginate(16);
 
 
         return view('master', ['users' => $users]);

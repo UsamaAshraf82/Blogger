@@ -120,6 +120,6 @@ $factory->define(App\comingSoon::class, function (Faker $faker) {
             '- Fast battery charging 4.5V/5A (58% in 30 min)  ',
             'N\A'
         ]),
-        'img'=>'/Image/mobile/mobile-icon.jpg',
+        'img'=>'/Image/mobile/IMG ('.random_int(1,60).').png'
     ];
 });
