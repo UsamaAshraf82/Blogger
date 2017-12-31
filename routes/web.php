@@ -12,3 +12,8 @@
 */
 
 Route::get('/','Pagination@index');
+
+
+
+//admin
+Route::get('/admin','admin\adminController@home');
