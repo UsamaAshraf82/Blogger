@@ -132,3 +132,16 @@ footer{
     transition-property: width;
 
 }
+
+
+#admin_footer_btn
+{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;;
+}
+
+#admin_footer_btn :hover
+{
+    background-color: whitesmoke;
+}

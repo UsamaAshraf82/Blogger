@@ -15,6 +15,7 @@
 
     @include("layout.Header")
     @include("layout.frontend")
+
     @foreach ($users as $user)
         {{ $user->id }}
     @endforeach

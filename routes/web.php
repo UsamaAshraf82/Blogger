@@ -17,3 +17,6 @@ Route::get('/','Pagination@index');
 
 //admin
 Route::get('/admin','admin\adminController@home');
+Route::get('/admin/htc','admin\adminController@htc');
+Route::get('/admin/htc/create','admin\adminController@htccreate');
+Route::post('/admin/htc','Admin\adminController@store');
