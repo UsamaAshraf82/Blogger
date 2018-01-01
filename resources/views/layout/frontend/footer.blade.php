@@ -1,8 +1,3 @@
-<div class="row">
-    <div class="col-lg-4 col-lg-offset-4" style="font-size: 15px">
-        {!!$users->links()  !!}
-    </div>
-</div>
 
 
 

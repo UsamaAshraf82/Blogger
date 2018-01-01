@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHtcTable extends Migration
+class CreateMobilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateHtcTable extends Migration
      */
     public function up()
     {
-        Schema::create('htc', function (Blueprint $table) {
-            //
+        Schema::create('mobiles', function (Blueprint $table) {
             $table->increments('id')->unique();
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('company');
+            $table->string('status');
             $table->text('new');
             $table->string('price');
             $table->string('OS');
@@ -65,6 +66,8 @@ class CreateHtcTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('htc');
+        Schema::dropIfExists('mobiles');
+
     }
+
 }

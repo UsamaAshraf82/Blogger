@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class coming_soon_table_seeder extends Seeder
+class mobiles_migraton extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class coming_soon_table_seeder extends Seeder
     public function run()
     {
         //
-        factory(App\comingSoon::class, 20)->create();
+        factory(App\mobile::class, 500)->create();
     }
 }

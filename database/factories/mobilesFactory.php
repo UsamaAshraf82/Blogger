@@ -2,13 +2,14 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\htc::class, function (Faker $faker) {
-
+//UPDATE `mobiles` SET `price`=0 WHERE `status`='Coming soon'
+$factory->define(App\mobile::class, function (Faker $faker) {
     return [
-
-        'name' => 'htc '.$faker->randomLetter.' '.random_int(1,50),
+        'company' => $faker->randomElement(['VIVO','HTC','LENOVO','QMOBILE','OPPO']),
+        'status' => $faker->randomElement(['Released','Released','Released','Released','Coming Soon','Expired']),
+        'name' =>$faker->randomLetter.random_int(1,9)." ".random_int(1,500),
         'new' => $faker->realText(600),
-        'price' => 'RS. '.random_int(10000,70000),
+        'price' => random_int(10000,90000),
         'OS' => 'Android '. $faker->randomElement([
                 'KitKat 4.4',
                 'Lollipop 5.0',

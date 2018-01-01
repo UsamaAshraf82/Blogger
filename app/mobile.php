@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class comingSoon extends Model
+class mobile extends Model
 {
     //
-    protected $table = 'comingSoon';
+    protected $table = 'mobiles';
 }

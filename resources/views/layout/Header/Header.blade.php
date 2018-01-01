@@ -30,9 +30,11 @@
             </ul>
             <br>
             <div style="margin-left: 1cm" >
-                <input type="search" placeholder="Search here">
-                <button class="btn"><strong>Search</strong></button>
-            </div>
+                <form method="post" action={{route('search')}}>
+                    <input  type="search" name="search" placeholder="Search here">
+                    <button class="btn"><strong>Search</strong></button>
+                </form>
+                </div>
         </div>
         <!--/.nav-collapse -->
     </div>
