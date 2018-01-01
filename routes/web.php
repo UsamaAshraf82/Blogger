@@ -20,7 +20,9 @@ Route::get('/range70-90','Pagination@index90')->name('range70-90');
 Route::get('/range50-70','Pagination@index70')->name('range50-70');
 Route::get('/range30-50','Pagination@index50')->name('range30-50');
 Route::get('/range10-30','Pagination@index30')->name('range10-30');
-Route::get('/search','Pagination@index30')->name('search');
+Route::post('/search','pagination@search')->name('search');
+Route::get('/mobile/{id}','pagination@getMobileInfo')->name('getInfo');
+
 
 
 

@@ -1,5 +1,5 @@
 
-<div class="col-lg-3 p-l-0 p-r-0 collapse in" id="sidebar">
+<div class=" p-l-0 p-r-0 collapse in " id="sidebar">
 
     <div class="list-group panel bg-dark">
         <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Item 1</span> </a>

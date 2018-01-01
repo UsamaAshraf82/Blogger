@@ -31,12 +31,11 @@ class pagination extends Controller
     public function search(Request $request)
     {
 
-        $users = DB::table('mobiles')->get();
+        $users = DB::table('mobiles')->where('name','=',$request->search)->get();
 
 
 
-
-        return view('index',['users' => $users]);
+        return view('layout.mobile_view.mobile_view',['users' => $users]);
     }
     public function index50()
     {
@@ -46,6 +45,14 @@ class pagination extends Controller
 
 
         return view('index',['users' => $users]);
+    }
+    public function getMobileInfo($id)
+    {
+        $users = DB::table('mobiles')->where('id','=',$id)->get();
+
+
+
+        return view('layout.mobile_view.mobile_view',['users' => $users]);
     }
     public function index30()
     {

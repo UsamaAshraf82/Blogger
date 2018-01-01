@@ -2,9 +2,6 @@
     <div class="container-fluid">
         <div class="navbar-header">
 
-
-            //edher kerma change
-
             <a class="navbar-brand text-hide" href="http://disputebills.com">Brand Text
             </a>
         </div>
@@ -30,7 +27,8 @@
             </ul>
             <br>
             <div style="margin-left: 1cm" >
-                <form method="post" action={{route('search')}}>
+                <form method="post" action='{{route('search')}}'>
+                    {{csrf_field()}}
                     <input  type="search" name="search" placeholder="Search here">
                     <button class="btn"><strong>Search</strong></button>
                 </form>
