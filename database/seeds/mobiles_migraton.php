@@ -12,6 +12,8 @@ class mobiles_migraton extends Seeder
     public function run()
     {
         //
-        factory(App\mobile::class, 500)->create();
+        factory(App\mobile::class, 100)->create();
+        DB::statement("UPDATE mobiles SET `price`=0 WHERE `status`='Coming soon'");
+
     }
 }
