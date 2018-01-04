@@ -20,9 +20,9 @@ $factory->define(App\mobile::class, function (Faker $faker) {
         'Weight' => rand('100','300').' g',
         'sim' => $faker->randomElement(['Single','Double']),
         'colors' => $faker->randomElement(['Black','White']),
-        '2G band'=>'GSM 850 / 900 / 1800 / 1900 ',
-        '3G band'=>'HSDPA 850 / 900 / 1900 / 2100 ',
-        '4G band'=>'LTE',
+        'G2band'=>'GSM 850 / 900 / 1800 / 1900 ',
+        'G3band'=>'HSDPA 850 / 900 / 1900 / 2100 ',
+        'G4band'=>'LTE',
         'CPU' => $faker->randomElement([
             'Octa-core (4 x 2.4 GHz Cortex-A73 + 4 x 1.8 GHz Cortex-A53)',
             '1.3 Ghz Octa Core Cortex A53, 64 bit',
@@ -52,7 +52,7 @@ $factory->define(App\mobile::class, function (Faker $faker) {
             '6.0 Inches',
             '6.5 Inches']),
         'Protection'=>'Corning Gorilla Glass'.random_int(1,5),
-        'Built-in'=>$faker->randomElement([
+        'Built_in'=>$faker->randomElement([
             '64/128GB Built-in, 4/6GB RAM  ',
             '64GB Built-in, 6GB RAM ',
             '32GB Built-in, 3GB RAM  ',
@@ -60,7 +60,7 @@ $factory->define(App\mobile::class, function (Faker $faker) {
         'Card'=>$faker->randomElement([
             'microSD Card, (supports upto 128GB)',
             'N\A']),
-        'Main camera'=>$faker->randomElement([
+        'Maincamera'=>$faker->randomElement([
             '13 MP, autofocus, LED flash',
             'Dual 12 MP, autofocus, (dual-LED + dual tone) flash',
             '5 MP, LED flash ',

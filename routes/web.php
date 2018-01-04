@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/','Pagination@oppo')->name('oppo');
 Route::get('/htc','Pagination@htc')->name('htc');
 Route::get('/lenovo','Pagination@lenovo')->name('lenovo');
@@ -27,4 +30,16 @@ Route::get('/mobile/{id}','pagination@getMobileInfo')->name('getInfo');
 
 
 //admin
-Route::get('/admin','admin\adminController@home');
+Route::get('/admin','admin\adminController@mobile');
+
+Route::get('/admin/mobile/create','Admin\adminController@create');
+Route::post('/admin/mobile/add','Admin\adminController@store');
+
+Route::get('/admin/mobile/{id}/edit','Admin\adminController@edit');
+Route::patch('/admin/mobile/{id}/update','Admin\adminController@update');
+
+Route::delete('/admin/mobile/{id}/delete','Admin\adminController@delete');
+//Route::get('/admin/mobile/create','admin\adminController@create');
+//Route::get('/admin/mobile/{id}/edit','admin\adminController@mobile');
+//Route::get('/admin/mobile/{id}/update','admin\adminController@mobile');
+//Route::get('/admin/mobile','admin\adminController@mobile'); //store

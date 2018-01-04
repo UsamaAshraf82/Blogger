@@ -5,8 +5,9 @@
             <a class="navbar-brand text-hide" href="http://disputebills.com">Brand Text</a>
 
         </div>
-        <div >
-            <a href="#"> Admin Panel</a>
+        <div class="col-lg-offset-3">
+
+            <a href="/admin"> Admin Panel</a>
         </div>
         <div id="navbar6" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav nav ml-auto">
@@ -15,7 +16,7 @@
                 <li><a href="#">Vivi</a></li>
                 <li><a href="#">Coming Soon</a></li>
             </ul>
-            <br>
+
             {{--<div style="margin-left: 1cm" >
                 <input type="search" placeholder="Search here">
                 <button class="btn"><strong>Search</strong></button>
