@@ -23,18 +23,16 @@ Route::get('/range10-30','Pagination@index30')->name('range10-30');
 Route::post('/search','pagination@search')->name('search');
 Route::get('/mobile/{id}','pagination@getMobileInfo')->name('getInfo');
 //Route::get('/mobile','pagination@getlatestInfo')->name('latest');
-Route::get('layout.Header.Message', function () {
 
-    $mobiles = DB::table('mobiles')->where('status','=','Coming Soon')->orderBy('company')->get();
-
-
-    echo $mobiles;
-//    return view('layout.Header.Message')->withMobiles($mobiles);
-});
 
 
 
 
 
 //admin
-Route::get('/admin','admin\adminController@home');
+Route::get('/admin','admin\adminController@mobile');
+Route::get('/admin/mobile/create','Admin\adminController@create');
+Route::post('/admin/mobile/add','Admin\adminController@store');
+Route::get('/admin/mobile/{id}/edit','Admin\adminController@edit');
+Route::patch('/admin/mobile/{id}/update','Admin\adminController@update');
+Route::delete('/admin/mobile/{id}/delete','Admin\adminController@delete');
