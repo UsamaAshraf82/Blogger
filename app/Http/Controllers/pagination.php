@@ -9,6 +9,17 @@ use Illuminate\Pagination\Paginator;
 
 class pagination extends Controller
 {
+    public function all()
+    {
+        $a = DB::table('mobiles')->whereBetween('price', [70000, 90000])->orderBy('price', 'desc')->limit(8)->get();
+        $b = DB::table('mobiles')->whereBetween('price', [50000, 70000])->orderBy('price', 'desc')->limit(8)->get();
+        $c = DB::table('mobiles')->whereBetween('price', [30000, 50000])->orderBy('price', 'desc')->limit(8)->get();
+        $d=DB::table('mobiles')->where('status','=','Coming Soon')->get();
+
+
+
+        return view('Home',['a'=>$a,'b'=>$b,'c'=>$c,'users'=>$d]);
+    }
     public function index90()
     {
         $users = DB::table('mobiles')->whereBetween('price', [70000, 90000])->orderBy('price', 'desc')->paginate(20);
@@ -54,6 +65,14 @@ class pagination extends Controller
 
         return view('layout.mobile_view.mobile_view',['users' => $users]);
     }
+   /* public function getlatestInfo()
+    {
+        $users = DB::table('mobiles')->groupBy('company')->having('status','=','Coming soon')->get();
+
+
+
+        return view('layout.mobile_view.mobile_view',['users' => $users]);
+    }*/
     public function index30()
     {
         $users = DB::table('mobiles')->whereBetween('price', [10000, 30000])->orderBy('price', 'desc')->paginate(20);

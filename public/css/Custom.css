@@ -1,12 +1,8 @@
-#navli a
-{
-    background-color: gray !important;
-    color: white;
-}
+
 marquee {
     background-color: rgb(217, 219, 223);
 
-    height: 23px;
+    height:30px;
 }
 
 body { background: #fff;}
@@ -28,86 +24,39 @@ body { background: #fff;}
 .carousel-control.left {margin-left: -45px; color: black;}
 .carousel-control.right {margin-right: -45px; color: black;}
 
-.navbar-brand {
-    padding: 0px;
-}
-.navbar-brand>img {
-    height: 100%;
-    padding: 10px;
-    width: auto;
-}
-.example5 .navbar-brand {
-    display: flex;
-    align-items: center;
-}
-.example5 .navbar-brand>img {
-    padding: 7px 14px;
-}
-.example6 .navbar-brand{
-    background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
-    width: 200px;
-}
+
 footer{
     font-size: 2em;
 }
-#navli :hover
-{
-    background-color: purple !important;
-}
+
 .list-group-item {
    font-size: 2em;
 }
 #sidebar .list-group-item {
     border-radius: 0;
-    background-color: #333;
-    color: #ccc;
+    background-color: #f2dede;
+    color: darkred;
+    border-style: dashed;
     border-left: 0;
     border-right: 0;
-    border-color: #2c2c2c;
+
     white-space: nowrap;
 }
 
 /* highlight active menu */
-#sidebar .list-group-item:not(.collapsed) {
-    background-color: #222;
-}
 
 /* closed state */
-#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
-    content: " \f0d7";
-    font-family: FontAwesome;
-    font-size: large;
-    display: inline;
-    text-align: right;
-    padding-left: 5px;
-}
+
 
 /* open state */
-#sidebar .list-group .list-group-item[aria-expanded="true"] {
-    background-color: #222;
-}
-#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
-    content: " \f0da";
-    font-family: FontAwesome;
-    display: inline;
-    text-align: right;
-    padding-left: 5px;
-}
+
+
 
 /* level 1*/
-#sidebar .list-group .collapse .list-group-item  {
-    padding-left: 20px;
-}
 
-/* level 2*/
-#sidebar .list-group .collapse > .collapse .list-group-item {
-    padding-left: 30px;
-}
 
 /* level 3*/
-#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
-    padding-left: 40px;
-}
+
 
 @media (max-width:50em) {
     /* overlay sub levels on small screens */
@@ -147,4 +96,9 @@ footer{
     -o-transition-property: width;
     transition-property: width;
 
+}
+
+#JB li a{
+    color:white;
+    background-color: transparent
 }

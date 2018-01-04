@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-//UPDATE `mobiles` SET `price`=0 WHERE `status`='Coming soon'
+//UPDATE `mobiles` SET `price`='Coming Soon' WHERE `status`='Coming soon'
 $factory->define(App\mobile::class, function (Faker $faker) {
     return [
         'company' => $faker->randomElement(['VIVO','HTC','LENOVO','QMOBILE','OPPO']),
