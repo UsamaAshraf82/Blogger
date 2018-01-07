@@ -11,10 +11,11 @@
         </div>
         <div id="navbar6" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav nav ml-auto">
-                <li><a href="#">HTC</a></li>
-                <li><a href="#">Lenovo</a></li>
-                <li><a href="#">Vivi</a></li>
-                <li><a href="#">Coming Soon</a></li>
+                <li><a href="/admin/other/HTC">HTC</a></li>
+                <li><a href="/admin/other/LENOVO">Lenovo</a></li>
+                <li><a href="/admin/other/VIVO">Vivo</a></li>
+                <li><a href="/admin/other/OPPO">OPPO</a></li>
+                <li><a href="/admin/other/QMOBILE">QMobile</a></li>
             </ul>
 
             {{--<div style="margin-left: 1cm" >

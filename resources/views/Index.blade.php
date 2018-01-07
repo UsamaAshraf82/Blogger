@@ -4,9 +4,7 @@
     Home
 @endsection
 
-@section('slider')
-    @include("layout.frontend.slider")
-@endsection
+
 
 @section('phone-view')
     <div class=""style="min-height: 1000px">
@@ -21,7 +19,8 @@
 
 
 
-            <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="col-lg-3 col-md-4 col-xs-6" style="background-color: #f2dede;">
+                <br><br>
                 <div class="thumbnail" style="background-color: #ffffff;border-color: #ffffff">
 
                 <a href="{{route('getInfo',['id'=>$mobile->id])}}" class="d-block mb-4 h-100">
@@ -29,12 +28,11 @@
 
                     <div class="caption text-center"style="line-height: 5px">
                         <p style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 15px;color: #2e3436;">{{$mobile->company}} {{ $mobile->name }}</p>
-                        @if (($mobile->status) === 'Released')
-                            <p style="color: #216a94;">RS:{{$mobile->price}}</p>
-                        @elseif (($mobile->status) === 'Expired')
+
+                        @if (($mobile->status) === 'Expired')
                         <p style="color: #216a94"><del>RS:{{$mobile->price}}</del></p>
                         @else
-                            <p style="color: #216a94">Coming Soon</p>
+                                <p style="color: #216a94;">RS:{{$mobile->price}}</p>
                         @endif
 
                     </div>

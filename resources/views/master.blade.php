@@ -15,10 +15,13 @@
 <body>
 
     @include("layout.Header")
-    @yield('slider')
+
+    @include("marquee")
+@yield('slider')
     <div class="container">
         <div class="row">
             <div class="col-lg-9"style="min-height: 1000px">
+                @yield("home")
             @yield("phone-view")
             </div>
             <div class="col-lg-3">

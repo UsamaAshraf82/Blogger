@@ -14,6 +14,13 @@ class adminController extends Controller
         $mobiles = DB::table('mobiles')->paginate(10);
         return view('admin.mobiles.mobile', ['mobiles' => $mobiles]);
     }
+
+    public function other($id)
+    {
+        $mobiles = DB::table('mobiles')->where('company','=',$id)->paginate(10);
+        return view('admin.mobiles.mobile', ['mobiles' => $mobiles]);
+    }
+
     public function update(Request $request,$id)
     {
         $mobiles=mobile::find($id);

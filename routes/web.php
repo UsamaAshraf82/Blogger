@@ -10,10 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-use Illuminate\Support\Facades\Auth;
-
-Route::get('/','Pagination@oppo')->name('oppo');
+Route::get('/','Pagination@all')->name('Home');
 Route::get('/htc','Pagination@htc')->name('htc');
 Route::get('/lenovo','Pagination@lenovo')->name('lenovo');
 Route::get('/vivo','Pagination@vivo')->name('vivo');
@@ -25,12 +22,23 @@ Route::get('/range30-50','Pagination@index50')->name('range30-50');
 Route::get('/range10-30','Pagination@index30')->name('range10-30');
 Route::post('/search','pagination@search')->name('search');
 Route::get('/mobile/{id}','pagination@getMobileInfo')->name('getInfo');
+//Route::get('/mobile','pagination@getlatestInfo')->name('latest');
+Route::get('layout.Header.Message', function () {
+
+    $mobiles = DB::table('mobiles')->where('status','=','Coming Soon')->orderBy('company')->get();
+
+
+    echo $mobiles;
+//    return view('layout.Header.Message')->withMobiles($mobiles);
+});
+
 
 
 
 
 //admin
 Route::get('/admin','admin\adminController@mobile');
+Route::get('/admin/other/{id}','admin\adminController@other');
 
 Route::get('/admin/mobile/create','Admin\adminController@create');
 Route::post('/admin/mobile/add','Admin\adminController@store');
@@ -39,7 +47,3 @@ Route::get('/admin/mobile/{id}/edit','Admin\adminController@edit');
 Route::patch('/admin/mobile/{id}/update','Admin\adminController@update');
 
 Route::delete('/admin/mobile/{id}/delete','Admin\adminController@delete');
-//Route::get('/admin/mobile/create','admin\adminController@create');
-//Route::get('/admin/mobile/{id}/edit','admin\adminController@mobile');
-//Route::get('/admin/mobile/{id}/update','admin\adminController@mobile');
-//Route::get('/admin/mobile','admin\adminController@mobile'); //store
